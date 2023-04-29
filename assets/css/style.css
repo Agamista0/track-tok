@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap");
-
-
-
-
-.slick-initialized .slick-slide {
-    outline: 0
+body {
+    font-family: "DM Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px
 }
-
 .section-padding {
     padding-top: 120px;
     padding-bottom: 100px
@@ -113,6 +111,9 @@
     z-index: 1;
     border: 0;
     overflow: hidden
+}
+a:hover{
+    text-decoration: none
 }
 
 .btn::before {
@@ -984,34 +985,6 @@
 
 
 
-.h1-testimonial-active.dot-style .slick-dots button {
-    text-indent: -100000px;
-    height: 9px;
-    width: 9px;
-    border: 0;
-    padding: 0;
-    margin: 0 4px;
-    cursor: pointer;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.4)
-}
-
-.h1-testimonial-active.dot-style .slick-dots .slick-active button {
-    background: #ffff;
-    height: 12px;
-    width: 12px;
-    position: relative;
-    top: -1px
-}
-
-.h1-testimonial-active.dot-style li {
-    display: inline-block
-}
-
-.slick-initialized .slick-slide {
-    outline: 0
-}
-
 .footer-area .footer-pera p {
     color: #6D6E8D;
     padding-right: 52px;
@@ -1019,7 +992,6 @@
     margin-bottom: 50px;
     line-height: 1.8
 }
-
 
 
 .footer-area .footer-tittle h4 {
@@ -1037,11 +1009,6 @@
     width: 160px;
     height: 120px;
 }
-
-
-
-
-
 .footer-area .footer-tittle ul li a {
     color: #6D6E8D;
     font-weight: 300;
@@ -1158,3 +1125,121 @@
     -o-transform: rotateY(180deg);
     color: #fff
 }
+
+
+/* community.html */
+
+
+.main-music{
+    position: relative;
+    width:60%;
+    height:105px;
+    background-color: rgb(240 239 244);
+    border-radius: 6px;
+ 
+    left: 390px;
+    
+}
+
+.song-title{
+    padding: 14px;
+    font-size: 23px;
+    
+}
+
+button{
+    cursor:pointer;
+    width:60px;
+    height: 30px;
+    border-radius:20px;
+    border: 0.01em solid rgb(210 209 214);
+    background-color: transparent;
+}
+
+#play-btn{
+    background-color: rgb(36, 111, 231);
+    border-radius:20px;
+    border-color: transparent;
+    width:20px;
+    height: 20px;
+    margin-left:10px;
+
+}
+
+.orginal{
+    background-color: rgb(229 238 255);
+    color:rgb(54 114 175);
+    width:60px;
+    border-color: transparent;
+
+}
+
+.song-{
+    top:25px;
+    position: absolute;
+    margin-left:15px;
+    color:rgb(136 135 141);
+    font-size: 15px;
+
+}
+
+#fa-solid1{
+    color: white;
+    font-size: 10px;
+    margin-right: 3px;
+}
+
+.fas{
+    font-size: 12px;
+    margin-right:10px ;
+    color: rgb(147 159 172);
+}
+
+#fa-solid2{
+    color:rgb(136 135 141);
+    font-size: 10px;
+    margin-right:10px ;
+
+}
+
+.fa-heart{
+    color:rgb(136 135 141);
+    font-size: 10px;
+    margin-right:10px ;
+}
+
+.fa-comment{
+    color:rgb(136 135 141);
+    font-size: 10px;
+    margin-right:10px ;
+}
+.top-right-image{
+    position: absolute;
+    right:0;
+    width:30px;
+    height:30px;
+    margin: 10px;
+}
+
+.input-group{
+    width:25%;
+    justify-content: center ;
+}
+
+/* community search  */
+    #search-input {
+    width: 30%;
+    padding: 13px;
+    border-radius: 4px;
+    border: 2px solid #007bff;
+    font-size: 15px;
+    margin-top: 100px;
+    margin-left: 650px;
+    }
+#search-button{
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+      
+    
