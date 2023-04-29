@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap");
+
 body {
     font-family: "DM Sans", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 16px
 }
+
 .section-padding {
     padding-top: 120px;
     padding-bottom: 100px
@@ -24,6 +26,7 @@ body {
 .section-tittle {
     padding-bottom: 20px
 }
+
 .section-tittle span {
     color: #000DFF;
     font-size: 120px;
@@ -43,6 +46,7 @@ body {
     font-weight: 700;
     margin-bottom: 25px
 }
+
 .section-tittle1 h2 {
     text-transform: uppercase;
     font-family: "DM Sans", sans-serif;
@@ -112,7 +116,8 @@ body {
     border: 0;
     overflow: hidden
 }
-a:hover{
+
+a:hover {
     text-decoration: none
 }
 
@@ -349,7 +354,8 @@ a:hover{
 }
 
 .login-btn {
-    padding: 19px 35px
+    padding: 19px 35px;
+
 }
 
 
@@ -755,9 +761,10 @@ a:hover{
 
 
 .about-area .support-location-img img {
-    width: 120% ;
+    width: 120%;
     margin: auto 5px;
 }
+
 .about-area .right-caption {
     position: relative
 }
@@ -940,7 +947,8 @@ a:hover{
     position: absolute;
     top: -33px;
     left: -34px;
-    z-index: -1 }
+    z-index: -1
+}
 
 .testimonial-area .testimonial-caption p {
     font-size: 28px;
@@ -1009,6 +1017,7 @@ a:hover{
     width: 160px;
     height: 120px;
 }
+
 .footer-area .footer-tittle ul li a {
     color: #6D6E8D;
     font-weight: 300;
@@ -1059,7 +1068,8 @@ a:hover{
     width: 100%;
     display: block;
     margin-top: 10px;
-    border-radius: 5px
+    border-radius: 5px;
+    color: white;
 }
 
 .footer-area .info.error {
@@ -1130,116 +1140,340 @@ a:hover{
 /* community.html */
 
 
-.main-music{
+.main-music {
     position: relative;
-    width:60%;
-    height:105px;
+    width: 60%;
+    height: 105px;
     background-color: rgb(240 239 244);
     border-radius: 6px;
- 
+
     left: 390px;
-    
+
 }
 
-.song-title{
+.song-title {
     padding: 14px;
     font-size: 23px;
-    
+
 }
 
-button{
-    cursor:pointer;
-    width:60px;
+.main-music button {
+    cursor: pointer;
+    width: 60px;
     height: 30px;
-    border-radius:20px;
+    border-radius: 20px;
     border: 0.01em solid rgb(210 209 214);
     background-color: transparent;
 }
 
-#play-btn{
+#play-btn {
     background-color: rgb(36, 111, 231);
-    border-radius:20px;
+    border-radius: 20px;
     border-color: transparent;
-    width:20px;
+    width: 20px;
     height: 20px;
-    margin-left:10px;
+    margin-left: 10px;
 
 }
 
-.orginal{
+.orginal {
     background-color: rgb(229 238 255);
-    color:rgb(54 114 175);
-    width:60px;
+    color: rgb(54 114 175);
+    width: 60px;
     border-color: transparent;
 
 }
 
-.song-{
-    top:25px;
+.song- {
+    top: 25px;
     position: absolute;
-    margin-left:15px;
-    color:rgb(136 135 141);
+    margin-left: 15px;
+    color: rgb(136 135 141);
     font-size: 15px;
 
 }
 
-#fa-solid1{
+#fa-solid1 {
     color: white;
     font-size: 10px;
     margin-right: 3px;
 }
 
-.fas{
+.fas {
     font-size: 12px;
-    margin-right:10px ;
+    margin-right: 10px;
     color: rgb(147 159 172);
 }
 
-#fa-solid2{
-    color:rgb(136 135 141);
+#fa-solid2 {
+    color: rgb(136 135 141);
     font-size: 10px;
-    margin-right:10px ;
+    margin-right: 10px;
 
 }
 
-.fa-heart{
-    color:rgb(136 135 141);
+.fa-heart {
+    color: rgb(136 135 141);
     font-size: 10px;
-    margin-right:10px ;
+    margin-right: 10px;
 }
 
-.fa-comment{
-    color:rgb(136 135 141);
+.fa-comment {
+    color: rgb(136 135 141);
     font-size: 10px;
-    margin-right:10px ;
+    margin-right: 10px;
 }
-.top-right-image{
+
+.top-right-image {
     position: absolute;
-    right:0;
-    width:30px;
-    height:30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
     margin: 10px;
 }
 
-.input-group{
-    width:25%;
-    justify-content: center ;
+.input-group {
+    width: 25%;
+    justify-content: center;
 }
 
 /* community search  */
-    #search-input {
+#search-input {
     width: 30%;
     padding: 13px;
-    border-radius: 4px;
-    border: 2px solid #007bff;
+    border-radius: 120px;
+    border: 2px solid #000DFF;
     font-size: 15px;
     margin-top: 100px;
-    margin-left: 650px;
-    }
-#search-button{
-        background-color: #007bff;
-        color: white;
-        cursor: pointer;
-      }
-      
-    
+    margin-left: 630px;
+}
+
+#search-button {
+    background: #000DFF;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    border: 0;
+}
+
+/* lohin page  */
+
+.register-form-area .register-form {
+    background: #fff;
+    padding: 33px 60px 50px 50px;
+    box-shadow: 0px 10px 30px 0px rgba(13, 12, 13, 0.2)
+}
+
+.register-form-area .register-form .register-heading {
+    text-align: center
+}
+
+.register-form-area .register-form .register-heading span {
+    color: #140C40;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: block;
+    text-transform: capitalize
+}
+
+.register-form-area .register-form .input-box {
+    padding-top: 35px;
+    padding-bottom: 60px
+}
+
+
+
+.register-form-area .register-form .input-box .single-input-fields label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 6px;
+    color: #140C40;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: left
+}
+
+.register-form-area .register-form .input-box .single-input-fields input {
+    border: 1px solid #C9C9C9;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 0 25px;
+    color: #000
+}
+
+.register-form-area .register-form .input-box .single-input-fields input::placeholder {
+    color: #777777;
+    font-weight: 300;
+    font-size: 13px
+}
+
+.register-form-area .register-form .register-footer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    align-items: center
+}
+
+
+
+.register-form-area .register-form .register-footer p {
+    margin: 0
+}
+
+
+.register-form-area .register-form .register-footer p a {
+    color: #000DFF
+}
+
+.login-form-area .login-form {
+    background: #fff;
+    padding: 33px 60px 50px 50px;
+    box-shadow: 0px 10px 30px 0px rgba(13, 12, 13, 0.2)
+}
+
+.login-form-area .login-form .login-heading {
+    text-align: center
+}
+
+.login-form-area .login-form .login-heading span {
+    color: #140C40;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: block;
+    text-transform: capitalize
+}
+
+.login-form-area .login-form .input-box {
+    padding-top: 35px;
+    padding-bottom: 75px
+}
+
+
+
+.login-form-area .login-form .input-box .single-input-fields label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 6px;
+    color: #140C40;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: left
+}
+
+.login-form-area .login-form .input-box .single-input-fields input {
+    border: 1px solid #C9C9C9;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 0 25px;
+    color: #000
+}
+
+.login-form-area .login-form .input-box .single-input-fields input::placeholder {
+    color: #777777;
+    font-weight: 300;
+    font-size: 13px
+}
+
+.login-form-area .login-form .login-footer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    align-items: center
+}
+
+
+
+.login-form-area .login-form .login-footer p {
+    margin: 0
+}
+
+
+
+.login-form-area .login-form .login-footer p a {
+    color: #000DFF;
+}
+
+.login-check {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding-top: 8px;
+    overflow: hidden
+}
+
+
+.login-check input[type=checkbox]+label {
+    display: inline-block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 0 13px 0
+}
+
+.login-check input[type=checkbox] {
+    display: none
+}
+
+.login-check input[type="checkbox"]+label::before {
+    content: "\2714";
+    border: 0.1em solid #e4e4e4;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 10px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s
+}
+
+.login-check input[type=checkbox]+label:active:before {
+    transform: scale(0)
+}
+
+.login-check input[type=checkbox]:checked+label:before {
+    background-color: #000DFF;
+    border-color: #000DFF;
+    color: #fff;
+    line-height: 18px
+}
+
+.login-check a {
+    color: #000DFF;
+    font-size: 14px;
+    font-weight: 400
+}
+
+.login-check a:hover {
+    color: #000DFF
+}
