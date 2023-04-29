@@ -163,12 +163,10 @@ a:hover {
     text-transform: uppercase !important;
     font-size: 14px !important;
     font-weight: 700 !important;
-    padding: 15px 24px !important;
-    display: inline-block !important;
+    padding: 14px 35px ;
+    display: inline-block ;
     border-radius: 5px
 }
-
-
 
 .header-btn::after {
     position: unset !important
@@ -990,6 +988,25 @@ a:hover {
     position: absolute;
     z-index: 99
 }
+.h1-testimonial-active.dot-style .slick-dots button {
+    text-indent: -100000px;
+    height: 9px;
+    width: 9px;
+    border: 0;
+    padding: 0;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4)
+}
+
+.h1-testimonial-active.dot-style .slick-dots .slick-active button {
+    background: #ffff;
+    height: 12px;
+    width: 12px;
+    position: relative;
+    top: -1px
+}
 
 
 
@@ -1152,15 +1169,16 @@ a:hover {
 }
 
 .song-title {
+    color: #000;
     padding: 14px;
     font-size: 23px;
-
+    margin-top: 20px;
 }
 
 .main-music button {
     cursor: pointer;
-    width: 60px;
-    height: 30px;
+    width: 55px;
+    height: 27px;
     border-radius: 20px;
     border: 0.01em solid rgb(210 209 214);
     background-color: transparent;
@@ -1176,12 +1194,12 @@ a:hover {
 
 }
 
-.orginal {
+.main-music .orginal{
     background-color: rgb(229 238 255);
-    color: rgb(54 114 175);
-    width: 60px;
+    color:rgb(54 114 175);
+    width:60px;
+    font-weight: 900;
     border-color: transparent;
-
 }
 
 .song- {
@@ -1227,9 +1245,10 @@ a:hover {
 .top-right-image {
     position: absolute;
     right: 0;
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     margin: 10px;
+    border-radius: 20px;
 }
 
 .input-group {
@@ -1259,7 +1278,7 @@ a:hover {
     border: 0;
 }
 
-/* lohin page  */
+/* sid-up page  */
 
 .register-form-area .register-form {
     background: #fff;
@@ -1342,7 +1361,7 @@ a:hover {
     padding: 33px 60px 50px 50px;
     box-shadow: 0px 10px 30px 0px rgba(13, 12, 13, 0.2)
 }
-
+/* login page */
 .login-form-area .login-form .login-heading {
     text-align: center
 }
@@ -1476,4 +1495,97 @@ a:hover {
 
 .login-check a:hover {
     color: #000DFF
+}
+/* single page  */
+
+.single-page-left{
+    top: 100px;
+    width: 350px;
+    height: 764px;
+}
+.single-page-left h1 {
+    margin-top: 100px;
+    padding: 15px;
+    font-size: 32px;
+}
+  .single-page-right{
+    position: absolute;
+    top: 100px;
+  }
+  .single-page-right img{
+    width: 70%;
+    margin-left: 500px;
+  }
+  #user-img{
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    margin: 30px 30px;
+    border-radius: 20px;
+  }
+  /* contect page */
+  
+
+  .form-contact label {
+    font-size: 14px
+}
+
+.form-contact .form-group {
+    margin-bottom: 30px
+}
+
+.form-contact .form-control {
+    border: 1px solid #e5e6e9;
+    border-radius: 0px;
+    height: 48px;
+    padding-left: 18px;
+    font-size: 13px;
+    background: transparent
+}
+
+.form-contact .form-control:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+.form-contact .form-control::placeholder {
+    font-weight: 300;
+    color: #999999
+}
+
+.form-contact textarea {
+    border-radius: 0px;
+    height: 100% !important
+}
+.contact-info {
+    margin-bottom: 25px
+}
+
+.contact-info__icon {
+    margin-right: 20px
+}
+
+.contact-info__icon i,
+.contact-info__icon span {
+    color: #8f9195;
+    font-size: 27px
+}
+
+.contact-info .media-body h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #2a2a2a
+}
+
+.contact-info .media-body h3 a:hover {
+    color: #140C40
+}
+
+.contact-info .media-body p {
+    color: #8a8a8a
+}
+.comment-form .form-group {
+    margin-bottom: 30px
 }
