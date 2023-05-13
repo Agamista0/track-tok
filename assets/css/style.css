@@ -1589,3 +1589,135 @@ a:hover {
 .comment-form .form-group {
     margin-bottom: 30px
 }
+.Published{
+    margin-left:10px;
+
+    margin-top:40px;
+
+}
+.line1{
+    width:300px;
+    border-bottom: 0.1rem solid rgb(201, 201, 201);
+    position: absolute;
+    margin-top:50px;
+    margin-left: 10px;
+
+}
+.line2{
+    width:300px;
+    border-bottom: 0.1rem solid rgb(201, 201, 201);
+    position: absolute;
+    margin-left: 10px;
+    margin-top:250px;
+}
+.icons{
+    margin-top:60px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
+    left:0px;
+}
+.btnslbl{
+    padding-left:15px;
+}
+.fa-download{
+    margin-left:15px;
+}
+.fa-share{
+    margin-left:6px;
+ 
+}
+.fa-folder-plus{
+    margin-left:53px;
+
+}
+#iconsid{
+    margin-top:20px;
+    color:rgb(57, 129, 255);
+    font-size:19px;
+}
+.commentsection{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 300px;
+    margin-left:10px;
+}
+.comment{
+    height:50px;
+    width:250px;
+    border: 0.1rem solid rgb(201, 201, 201);
+    margin-left:60px;
+
+
+}
+.profilepic{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.bar{
+    position: relative;
+    height:60px;
+    width:74%;
+    background-color: rgb(250, 250, 250);
+    float: right;
+}
+.bar-line{
+    top:55px;
+    right:0;
+    position: absolute;
+    width:74%;
+    height:3px;
+    background-color: rgb(219, 219, 219);
+}
+.header{
+    height:100px;
+    width:100%;
+    position: relative;
+}
+.barbtn{
+    border-radius:50%;
+    border: 1px solid transparent;
+    width:40px;
+    height:40px;
+    margin-top:10px;
+    margin-left:20px;
+    background-color: white;
+    box-shadow: 2px 2px 13px 1px rgb(219, 219, 219);
+    
+    
+
+}
+
+.fa-play{    font-size: 14px;
+    color:rgb(57, 129, 255)
+}
+
+.fa-music{    font-size: 14px;
+    color:rgb(57, 129, 255)
+}
+.leftbtn
+{
+    border:0;
+    background-color: transparent;
+}
+.iconsright{
+    float:right;
+}
+
+#righticons{
+
+    font-size: 20px;
+    margin:15px;
+    margin-top:20px;
+}
+
+.btnlblright{
+    position: absolute;
+left:190px;
+margin-top:85px;
+display: flex;
+flex-direction: column;
+}
