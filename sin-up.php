@@ -1,12 +1,30 @@
+<?php
+require_once('connect.php');
+if(isset($_POST) & !empty($_POST)){
+ $username = mysqli_real_escape_string($connection, $_POST['username']);
+ $email = mysqli_real_escape_string($connection, $_POST['email']);
+ $password = md5($_POST['password']);
+ 
+
+ $sql = "INSERT INTO `login` (username, email, password) VALUES ('$username', '$email', '$password')";
+ $result = mysqli_query($connection, $sql);
+ if($result){
+  $smsg = "User Registration successfull";
+ }else{
+  $fmsg = "User registration failed";
+ }
+}
+
+?>
+
+
 <!doctype html>
 <html class="no-js" lang="zxx">
-
-<!-- Mirrored from preview.colorlib.com/theme/jobsco/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Apr 2023 05:11:11 GMT -->
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta charset="utf-8">
-  <title>Login</title>
+  <title>Sig-Up</title>
   <link rel="shortcut icon" type="image/x-icon"
     href="assets/img/icon/Untitled_logo_6_free-file__3_-removebg-preview.png ">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -20,24 +38,22 @@
 </head>
 
 <body>
-  <header>
+<header>
     <div class="header-area header-transparent">
       <div class="main-header header-sticky">
         <div class="container">
           <div class="menu-wrapper d-flex align-items-center justify-content-between">
             <div class="left-content d-flex align-items-center">
               <div class="logo mr-45">
-                <a href="index.html"><img src="assets/img/logo/logo.png" width="120px" alt=""></a>
+                <a href="index.php"><img src="assets/img/logo/logo.png" width="120px" alt=""></a>
               </div>
 
               <div class="main-menu d-none d-lg-block">
                 <nav>
                   <ul id="navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="community.html">Community</a></li>
-                    <li><a href="#">Page</a>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="community.php">Community</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                   </ul>
                 </nav>
               </div>
@@ -45,10 +61,19 @@
 
             <div class="buttons">
               <ul>
-                <li class="button-header">
-                  <a href="sin-up.html" class="header-btn mr-10"> Sign Up</a>
-                  <a href="login.html" class="btn header-btn2">Log In</a>
-                </li>
+              <?php if( isset($_SESSION['username']) && !empty($_SESSION['username']) )
+                {
+                ?>
+                  <li class="button-header">
+                    <a href="logOut.php" class="btn header-btn2">Log out </a>
+                  </li>
+                <?php }else{ ?>
+                  <li class="button-header">
+                    <a href="sin-up.php" class="header-btn mr-10"></i>Sign Up</a>
+                    <a href="login.php" class="btn header-btn2">Log In</a>
+                  </li>
+                <?php } 
+                ?>
               </ul>
             </div>
           </div>
@@ -60,38 +85,42 @@
       </div>
     </div>
   </header>
+
+
   <main>
 
-    <div class="login-form-area section-padding">
+    <div class="register-form-area section-padding">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-6 col-lg-7 col-md-10">
-            <div class="login-form">
+            <div class="register-form text-center">
 
-              <div class="login-heading">
-                <span>Login</span>
-                <p>Enter Login details to get access</p>
+            <form method="POST" > 
+              <div class="register-heading">
+                <span>Sign Up</span>
+                <p>Create your account to get full access</p>
+                <?php if(isset($smsg)){ ?><div class="alert alert-success" style="color:rgb(57, 129, 255);" role="alert"> <?php echo $smsg; ?> </div><?php } ?>
+                <?php if(isset($fmsg)){ ?><div class="alert alert-danger" style="color:rgb(57, 129, 255);" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
               </div>
-
               <div class="input-box">
                 <div class="single-input-fields">
-                  <label>Username or Email Address</label>
-                  <input type="text" placeholder="Username / Email address">
+                  <label>Full name</label>
+                  <input type="text" name="username" placeholder="Enter full name" required >
+                </div>
+                <div class="single-input-fields">
+                  <label>Email Address</label>
+                  <input type="email" name="email" placeholder="Enter email address" required autofocus >
                 </div>
                 <div class="single-input-fields">
                   <label>Password</label>
-                  <input type="password" placeholder="Enter Password">
-                </div>
-                <div class="single-input-fields login-check">
-                  <input type="checkbox" id="fruit1" name="keep-log">
-                  <label for="fruit1">Keep me logged in</label>
-                  <a href="#" class="f-right">Forgot Password?</a>
-                </div>
+                  <input type="password" name="password" placeholder="Enter Password" required >
+               
               </div>
 
-              <div class="login-footer">
-                <p>Don’t have an account? <a href="sin-up.html">Sign Up</a> here</p>
-                <button class="btn login-btn">Login</button>
+              <div class="register-footer">
+                <p> Already have an account? <a href="login.php"> Login</a> here</p>
+                <button class="btn login-btn">Sign Up</button>
+                </form>
               </div>
             </div>
           </div>
@@ -167,21 +196,8 @@
             </div>
           </div>
         </div>
-
-        <div class="footer-bottom-area">
-          <div class="container">
-            <div class="footer-border">
-              <div class="row d-flex align-items-center">
-                <div class="col-xl-12 ">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </footer>
-
-</body>
 
 </html>

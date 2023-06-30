@@ -1,3 +1,8 @@
+<?php
+session_start();
+require_once('connect.php');
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -15,23 +20,22 @@
 </head>
 
 <body>
-  <div class="header">
+<header>
     <div class="header-area header-transparent">
       <div class="main-header header-sticky">
         <div class="container">
           <div class="menu-wrapper d-flex align-items-center justify-content-between">
             <div class="left-content d-flex align-items-center">
               <div class="logo mr-45">
-                <a href="index.html"><img src="assets/img/logo/logo.png" width="120px" alt=""></a>
+                <a href="index.php"><img src="assets/img/logo/logo.png" width="120px" alt=""></a>
               </div>
 
               <div class="main-menu d-none d-lg-block">
                 <nav>
                   <ul id="navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="community.html">Community</a></li>
-                    <li><a href="#">Page</a> </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="community.php">Community</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                   </ul>
                 </nav>
               </div>
@@ -39,10 +43,19 @@
 
             <div class="buttons">
               <ul>
-                <li class="button-header">
-                  <a href="sin-up.html" class="header-btn mr-10"> Sign Up</a>
-                  <a href="login.html" class="btn header-btn2">Log In</a>
-                </li>
+              <?php if( isset($_SESSION['username']) && !empty($_SESSION['username']) )
+                {
+                ?>
+                  <li class="button-header">
+                    <a href="logOut.php" class="btn header-btn2">Log out </a>
+                  </li>
+                <?php }else{ ?>
+                  <li class="button-header">
+                    <a href="sin-up.php" class="header-btn mr-10"></i>Sign Up</a>
+                    <a href="login.php" class="btn header-btn2">Log In</a>
+                  </li>
+                <?php } 
+                ?>
               </ul>
             </div>
           </div>
@@ -53,6 +66,9 @@
         </div>
       </div>
     </div>
+  </header>
+
+
   </div class="header">
   <div class="single-page-left">
 
